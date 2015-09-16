@@ -1,2 +1,3 @@
 --color
+--format Bdd::RSpec::Formatter
 --require spec_helper

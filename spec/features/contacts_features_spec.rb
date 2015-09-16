@@ -1,33 +1,98 @@
 require 'rails_helper'
 
-RSpec.feature "ContactsFeatures", type: :feature do
+RSpec.feature "Contacts Features", type: :feature do
 
-  scenario "List Contacts" do
-    given_I_visit_the_home_page
-    when_I_click_on_the_contacts_link
-    then_I_should_be_on_the_contacts_page
+  scenario "List Contacts" do    
+    
+    Given "I visit the home page" do
+      visit "/"
+    end
+
+    When "I click on the Conctacts link" do
+      click_link "Contacts"
+    end
+
+    Then "I should be on the Contacts page" do
+      expect(page).to have_content("Listing Contacts")
+    end
+
+  end
+
+
+
+  scenario "List Contacts" do    
+    
+    Given "I visit the home page" do
+      visit "/"
+    end
+
+    When "I click on the Conctacts link" do
+      click_link "Contacts"
+    end
+
+    Then "I should be on the Contacts page" do
+      expect(page).to have_content("Listing Contacts")
+    end
+
   end
 
 
 
 
 
-  private
+  scenario "List Contacts" do    
+    
+    Given "I visit the home page" do
+      visit "/"
+    end
 
-  def given_I_visit_the_home_page
-    # Given I visit the home page
-    visit "/"
+    When "I click on the Conctacts link" do
+      click_link "Contacts"
+    end
+
+    Then "I should be on the Contacts page" do
+      expect(page).to have_content("Listing Contacts")
+    end
+
   end
 
-  def when_I_click_on_the_contacts_link
-    # When I click on the Conctacts link
-    click_link "Contacts"
+
+
+
+
+  scenario "List Contacts" do    
+    
+    Given "I visit the home page" do
+      visit "/"
+    end
+
+    When "I click on the Conctacts link" do
+      click_link "Contacts"
+    end
+
+    Then "I should be on the Contacts page" do
+      expect(page).to have_content("Listing Contacts")
+    end
+
   end
 
 
-  def then_I_should_be_on_the_contacts_page
-    # Then I should be on the Contacts page
-    expect(page).to have_content("Listing Contacts")
+  
+
+  scenario "List Contacts" do    
+    
+    Given "I visit the home page" do
+      visit "/"
+    end
+
+    When "I click on the Conctacts link" do
+      click_link "Contacts"
+    end
+
+    Then "I should be on the Contacts page" do
+      expect(page).to have_content("Listing Contacts")
+    end
+
   end
 
 end
